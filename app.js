@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Aman:test@cluster0.lhfmq.mongodb.net/listDB", {
+mongoose.connect("mongodb://localhost:8000/listDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
